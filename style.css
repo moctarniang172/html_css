@@ -1,0 +1,155 @@
+@import url();
+:root {
+    --my-color-gris:#f3f5f8;
+ --my-color-gris-fonce:#b2b4b6;
+ --my-color-jaune:#ffe800;
+ --my-color-blanch: #f1f1f1;
+}
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+           /* entete de la page */
+.conteneurs {
+    width: 100%;
+    min-height: 100vh;
+    background-color:#f3f5f8;
+    
+}  
+
+.entete {
+    background-color:var(--my-color-gris);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    grid-gap: 50px;
+    position: fixed;
+}
+.logo {
+    padding-right: 90px;
+    font-size: 1.2em;
+}
+span {
+    color:var(--my-color-jaune);
+}
+.liens{
+    display: flex;
+    grid-gap: 20px;
+    font-size:25px;
+    
+}
+.liens li a {
+    color: black;
+}
+.liens li a:hover {
+    color:var(--my-color-jaune) ;
+}
+.reseaux {
+    font-size: 25px;
+    display: flex;
+    grid-gap: 20px;
+    margin-top: 3px;
+    cursor: pointer;
+    
+}
+.reseaux :hover {
+    color: var(--my-color-jaune);
+}
+                /* section acceille da la page */
+.principal {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+} 
+            
+.cgauche, .cdroite{
+    width: 50%;
+}   
+.cgauche {
+    text-align: center;
+} 
+.cgauche h3 {
+    font-size: 30px;
+
+}     
+.cgauche h3 .btn-1 {
+    color: black ;
+    background-color: var(--my-color-jaune);
+} 
+button:hover {
+    color: var(--my-color-jaune);
+}   
+                           /*section des articles  */
+.grande-caisse {
+    width: 75%;
+    height: auto;
+    margin-left: 200px;
+    margin-top: 25px;
+    padding-left: 70px;
+    padding-top: 10px;
+    background-color: #f3f5f8;
+    border: var(--my-color-gris-fonce);
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 10px;
+}
+.petits-caisses {
+    width: 250px;
+    height: auto;
+    border: 2px solid white;
+    background-color: white;
+    
+    
+}
+.petits-caisses img {
+    padding-left: 30px;
+}
+.fa-regular {
+    color: var(--my-color-jaune);
+}
+.clique-1 {
+    font-size: 15px;
+    background-color: var(--my-color-jaune);
+    color: black;
+    width: 250px;
+    height: 30px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+.clique-1  button:hover {
+    color: white;
+}
+
+footer{
+    margin-top: 40px;
+    border-top: 5px solid #6f6f6f;
+    background-color:#f3f5f8;
+    color: black;
+    padding: 30px 100px;
+}
+footer h1{
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 3px solid var(--my-color-jaune);
+    width: 20%;
+    padding-bottom: 5px;
+    text-align: center;
+}
+footer .services{
+    margin-top: -10px;
+    display: flex;
+    
+}
+footer .services .service{
+    margin-right: 30px;
+    padding: 10px;
+
+}
+footer #contact{
+    color: rgb(181, 181,181);
+}
